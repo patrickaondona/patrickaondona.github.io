@@ -45,8 +45,9 @@
 }
 .company-details-div{
     display: flex;
+    justify-content: space-around;
     height: 230px;
-    width: 100%;
+    max-width: 100%;
     padding-top: 80px;
 }
 #company-logo{
@@ -89,9 +90,7 @@
     color: #4ba7a0;
     flex-direction: column;
     justify-content: center;
-    width: auto;
     height: 80px;
-    margin-left: 140px;
     border-radius: 8px;
     text-decoration: none;
     border: 1px solid #4ba7a0;
@@ -291,6 +290,9 @@ footer img{
         width: 120px;
         height: 80px;
         margin-left: 25px;
+    }
+    .company-details-div{
+        justify-content: center;
     }
     .company-details{
         margin-left: 25px;

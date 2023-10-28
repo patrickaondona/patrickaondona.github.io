@@ -133,10 +133,11 @@ header{
 }
 .categories-div{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    padding: 4em 0 8em 0;
-    gap: 15px;
-    width: auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 2em 0 8em 0;
+    gap: 15% 5%;
+    width: 100%;
 }
 .categories-div a{
     text-decoration: none;
@@ -144,17 +145,16 @@ header{
 .categories{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
-    width: 110px;
-    height: 80px;
+    width: 7em;
+    padding: 5px;
     cursor: pointer;
 }
 .categories:hover{
     background-color: #DCF0E6;
-    width: 110px;
-    height: 80px;
+    width: 7em;
     border-radius: 10px;
     transition: 1s;
     transition-delay: 150ms;
@@ -164,7 +164,9 @@ header{
     color: #347571;
 }
 .categories h5{
+    font-size: clamp(0.8em,1vw,1em);
     font-weight: 300;
+    max-width: 100%;
     color: #727070;
 }
 .transparency-div{
@@ -300,6 +302,7 @@ footer img{
 
 
 /*-------------------------------------------RESPONSIVENESS------------------------------------------*/
+
 @media only screen and (max-width: 600px) {
     .header1{
         gap: 10%;
@@ -333,9 +336,7 @@ footer img{
         transition-delay: 300ms;
     }
     .categories-div{
-        grid-template-columns: auto auto auto;
-        width: 80%;
-        padding-top: 2em;
+        gap: 15% 3%;
     }
     .transparency-div{
         flex-direction: column-reverse;
@@ -381,6 +382,8 @@ footer img{
         font-size: 15px;
     }
 }  
+
+
 @media only screen and (min-width: 600px){
     .search-div p{
         font-size: clamp(3em,1vw,1em);
@@ -389,6 +392,8 @@ footer img{
     }
     
 }
+
+
 @media only screen and (min-width: 992px){
     .search-div p{
         font-size: clamp(3.5em,1vw,1em);
@@ -396,10 +401,9 @@ footer img{
     }
     
 }
+
+
 @media only screen and (max-width: 992px){
-    .categories-div{
-        gap: 10px;
-    }
     .transparency-div{
         flex-direction: column-reverse;
     }
