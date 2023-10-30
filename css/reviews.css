@@ -312,12 +312,9 @@ footer img{
     .company-details h2{
         font-size: 20px;
     }
-    #company-review-amount{
-        font-size: 17px;
-    }
+    #company-review-amount,
     #rating{
-        margin: 0;
-        padding-left: 10px;
+        font-size: clamp(0.9em,1vw,1em);
     }
     .star-rating-box{
         width: 30px;
