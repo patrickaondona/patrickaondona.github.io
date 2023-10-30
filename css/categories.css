@@ -367,6 +367,7 @@ footer img{
         display: flex;
         align-items: center;
         justify-content: center;
+        list-style: none;
     }
     .company-details-div{
         height: 110px;
