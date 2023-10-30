@@ -205,7 +205,6 @@ header img{
 }
 #company-location{
     color: #FFF;
-    margin-bottom: 0.5em;
 }
 .company-contact{
     display: flex;
@@ -378,7 +377,7 @@ footer img{
     }
     .company-details{
         padding-top: 5px;
-        gap: 0.4em;
+        gap: 0.3em;
     }
     .company-details h3{
         font-size: 15px;
@@ -396,10 +395,6 @@ footer img{
     .score-reviews{
         font-size: 13px;
         position: relative;
-    }
-    #company-location{
-        font-size: 13px;
-        margin-top: 5px;
     }
     .company-contact{
         gap: 0.5em;
@@ -488,8 +483,7 @@ footer img{
         position: relative;
     }
     #company-location{
-        font-size: 13px;
-        margin-top: 5px;
+        font-size: clamp(0.7em,1vw,1em);
     }
     .company-contact{
         gap: 0.5em;
