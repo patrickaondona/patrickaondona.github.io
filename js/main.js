@@ -1,6 +1,14 @@
-function openSignup() {
-    let signUp = document.getElementById("sign-in-sign-up");
-    signUp.classList.toggle("open-sign-in-sign-up");
-} 
-let toggleBtn = document.getElementById("sign-in");
-toggleBtn.addEventListener("click", openSignup);
+
+function openClose() {
+    let search = document.getElementById("search-bar");
+    search.classList.toggle("open-search-bar"); 
+}
+
+let toggleButton = document.getElementById("search-div");
+let closeButton = document.getElementById("close");
+
+toggleButton.addEventListener("click", openClose);
+closeButton.addEventListener("click", openClose)
+
+
+
