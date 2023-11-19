@@ -26,7 +26,7 @@ header{
     align-items: center;
     gap: 1em;
     height: fit-content;
-    font-size: 8px;
+    font-size: clamp(0.5em,1vw,1em);
     cursor: pointer;
 }
 .search-div:hover{
@@ -47,7 +47,7 @@ header{
 }
 .open-search-bar input{
     width: 80%;
-    font-size: 7px;
+    font-size: clamp(0.5em,1vw,1em);
     font-style: italic;
     border: none;
     outline: none;
@@ -78,7 +78,7 @@ header{
     display: flex;
     padding-left: 1em;
     gap: 2em;
-    font-size: 7px;
+    font-size: clamp(0.5em,1vw,1em);
     height: 30px;
 }
 .header2 p{
