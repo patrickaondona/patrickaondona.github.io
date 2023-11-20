@@ -10,25 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="header-details">
-                <img src="images/ucb-logo.jpg" alt="Union Commercials Bank Logo">
+        <div class="header-details">
+            <img src="images/ucb-logo.jpg" alt="Union Commercials Bank Logo">
+            <div class="nav-links">
+                <a href="#">Know UCB</a>
+                <a href="#">Products & Services</a>
+                <a href="#">News & Events</a>
                 <div class="search-div" id="search-div">
                     <p>Search</p>
                     <i class="fa fa-search search-button" aria-hidden="true"></i>
                 </div>
-            </div>
-            <div class="search-bar" id="search-bar">
-                <input type="text" placeholder="Tell us what you're looking for?">
-                <button>Search</button>
-                <i class="fa-solid fa-xmark" id="close"></i>
+                <div class="toggle-btn">
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                </div>
             </div>
         </div>
-        <div class="nav-bar">
-            <p>Know UCB</p>
-            <p>Products & Services</p>
-            <p>News & Events</p>
-        </div>
+        <div class="search-bar" id="search-bar">
+            <input type="text" placeholder="Tell us what you're looking for?">
+            <button>Search</button>
+            <i class="fa-solid fa-xmark" id="close"></i>
+        </div>        
     </header>
     <section class="contact-div">
         <div class="contact-header">

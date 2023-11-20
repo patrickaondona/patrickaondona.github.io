@@ -1,37 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Nunito';
 }
 header{
-    display: flex;
-    flex-direction: column;
-}
-.header{
     display: flex;
     flex-direction: column;
 }
 .header-details{
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
     justify-content: space-between;
+    padding: 0.3em 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 .header-details img{
-    width: 50px;
-    height: 50px;
+    height: 30px;
+}
+.nav-links{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2em;
+    align-items: center;
+}
+.nav-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    height: 20px;
+    padding: 0 0.3em;
+    font-size: clamp(0.5em,1vw,1em);
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+.nav-links a:hover{
+    transition: all 1s;
+    border-color: #D38216;     
+    color: #D38216;
 }
 .search-div{
     display: flex;
     align-items: center;
     gap: 1em;
     height: fit-content;
+    width: fit-content;
     font-size: clamp(0.5em,1vw,1em);
+    font-weight: 500;
     cursor: pointer;
 }
 .search-div:hover{
     color: #D38216;
+    transition: all 1s;
 }
+.toggle-btn,
 .search-bar{
     display: none;
 }
@@ -72,23 +100,9 @@ header{
 .open-search-bar i:hover{
     color: #D38216;
 }
-.nav-bar{
-    background-color: #D38216;
-    color: #fff;
-    display: flex;
-    padding-left: 1em;
-    gap: 2em;
-    font-size: clamp(0.5em,1vw,1em);
-    height: 30px;
-}
-.nav-bar p{
-    padding: 1.4em 0 0 0;
-}
-.nav-bar p:hover{
-    border-bottom: 2px solid #fff;
-}
+
 .contact-div{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .contact-header,
@@ -96,7 +110,7 @@ header{
     background-image: url(../images/banner-img.jpg);
     height: 100px;
     background-size:cover;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: clamp(1.5em,1vw,1em);
@@ -106,14 +120,14 @@ header{
     height: 150px;
 }
 .about-us-div{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .about-us-header{
     filter: brightness(50%);
 }
 .ceo-div{
-    display: flex;
+    display: none;
     gap: 2em;
     padding: 2em;
 }
@@ -133,4 +147,83 @@ header{
 }
 .ceo-details h6{
     font-size: clamp(0.6em,1vw,1em);
+}
+
+
+
+/*---------------------------------------------RESPONSIVENESS----------------------------*/
+@media (max-width: 600px) {
+    .nav-links{
+        grid-template-columns: auto auto;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .toggle-btn{
+        display: block;
+        width: 18px;
+    }
+    input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: translateX(0);
+    }
+
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 100%;
+        display: block;
+        width: 100%;
+        width: 12px;
+    }
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 1.5px;
+        width: 100%;
+        background-color: #000;
+    }
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 1.5px;
+    }
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 1.5px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 3.5px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -4.5px;
+    }
 }
