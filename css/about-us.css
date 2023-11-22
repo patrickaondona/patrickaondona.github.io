@@ -97,7 +97,7 @@ header{
 .about-us-div{
     display: flex;
     flex-direction: column;
-    margin-top: 2.5em;
+    padding-top: 2.5em;
 }
 .about-us-header{
     background-image: url(../images/banner-img.jpg);
