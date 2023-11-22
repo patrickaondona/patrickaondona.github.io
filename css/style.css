@@ -1,175 +1,241 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito';
 }
+html {
+    scroll-behavior: smooth !important;
+    -webkit-scroll-behavior: smooth !important;
+}
+body {
+    background-color: #F7F8FC;
+}
+::-webkit-scrollbar {
+    cursor: pointer !important; 
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    cursor: pointer !important; 
+    background: #fff; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(124, 122, 122);
+    cursor: pointer !important; 
+}
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer !important; 
+    background: #E61B20; 
+}
 header{
     display: flex;
     flex-direction: column;
 }
 .header-details{
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.3em 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 1;
 }
-.header-details img{
+.header-details img,
+.footer-div1 img{
     height: 30px;
 }
-.nav-links{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+.nav-links-div{
+    display: flex;
     gap: 2em;
     align-items: center;
 }
-.nav-links a{
+#nav-links{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: #000;
     height: 20px;
+    width: fit-content;
     padding: 0 0.3em;
     font-size: clamp(0.5em,1vw,1em);
     font-weight: 700;
     border: 1px solid transparent;
 }
-.nav-links a:hover{
-    transition: all 1s;
-    border-color: #D38216;     
-    color: #D38216;
+#nav-links:hover{
+    transition: all 2s;
+    border-color: #E61B20;     
+    color: #E61B20;
 }
-.search-div{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    height: fit-content;
-    width: fit-content;
-    font-size: clamp(0.5em,1vw,1em);
-    font-weight: 500;
-    cursor: pointer;
-}
-.search-div:hover{
-    color: #D38216;
-    transition: all 1s;
-}
-.toggle-btn,
-.search-bar,
+.sidebarIconToggle,
+.openSidebarMenu,
 #sidebarMenu{
     display: none;
 }
-.open-search-bar{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    height: 2.5em;
-    padding: 0 0.5em;
-    border-top: 0.5px solid #cecece;
-    transition: 1s;
-    transition-delay: 500ms;
+#lady-bg-img{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/sandie-clarke-FDoY8KI7VMU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
 }
-.open-search-bar input{
-    width: 80%;
-    font-size: clamp(0.5em,1vw,1em);
-    font-style: italic;
-    border: none;
-    outline: none;
-}
-.open-search-bar button{
-    width: 90px;
-    height: 20px;
-    border-radius: 2px;
-    background-color: #D38216;
-    color: #fff;
-    font-size: 7px;
-    border: none;
-    cursor: pointer;
-}
-.open-search-bar button:hover{
-    background-color: #aa6d1e;
-}
-.open-search-bar i{
-    font-size: 10px;
-    cursor: pointer;
-}
-.open-search-bar i:hover{
-    color: #D38216;
-}
-
 .contact-div{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 .contact-header,
 .about-us-header{
     background-image: url(../images/banner-img.jpg);
-    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    color: #fff;
+    height: 3.5em;
     background-size:cover;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1.5em,1vw,1em);
+    filter: brightness(50%);
+    font-size: clamp(1.8em,1vw,1em);
+    font-family: Arial, Helvetica, sans-serif;
 }
-.contact-div img{
+.contact-details-div{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7em,1vw,1em);
+}
+.contact-details-div img{
     width: 200px;
     height: 150px;
 }
 .about-us-div{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
-.about-us-header{
-    filter: brightness(50%);
+.about-ceo{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    font-size: clamp(0.7em,1vw,1em);
 }
-.ceo-div{
-    display: none;
+.ceo-details-div{
+    display: flex;
     gap: 2em;
     padding: 2em;
 }
-.ceo-div img{
+.ceo-details-div img{
     width: 100px;
     height: 100px;
 }
-.ceo-div p{
-    text-align: center;
+.ceo-details-div p{
+    padding-top: 3em;
+    text-align: left;
     width: 50%;
-    font-size: clamp(0.7em,1vw,1em);
+    font-size: clamp(0.6em,1vw,1em);
 }
 .ceo-details h4{
     font-weight: 500;
-    color: #D38216;
+    color: #E61B20;
     font-size: clamp(0.8em,1vw,1em);
 }
 .ceo-details h6{
     font-size: clamp(0.6em,1vw,1em);
 }
-
-
+footer{
+    height: 15em;
+    background-color: #555;
+    display: grid;
+    grid-template-rows: 30% auto 15%;
+    padding: 1em;
+}
+.footer-div1{
+    display: flex;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+    gap: 0.5em;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: clamp(0.6em,1vw,1em);
+}
+.socials a i:hover{
+    transition: all 2s;
+}
+.fa-facebook:hover{
+    color: #0866FF;
+}
+.fa-twitter:hover{
+    color: #1EA1F1;
+}
+.fa-instagram:hover{
+    color: #C1226B;
+}
+.fa-youtube:hover{
+    color: #FF0000;
+}
+.fa-linkedin:hover{
+    color: #0073B2;
+}
+.footer-div2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.footer-details h4{
+    color: #fff;
+    font-size: clamp(0.6em,1vw,1em);
+    padding-bottom: 0.5em;
+}
+.footer-details a{
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(0.5em,1vw,1em);
+    width: fit-content;
+}
+.footer-details a:hover{
+    color: #E61B20;
+    transition: all 2s;
+    text-decoration: underline;
+}
+.sub-footer{
+    border-top: 0.5px solid #8a8989;
+    border-bottom: 0.5px solid #8a8989;
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.5em,1vw,1em);
+    color: #fff;
+}
 
 /*---------------------------------------------RESPONSIVENESS----------------------------*/
 @media (max-width: 600px) {
     .header-details{
-        padding: 0.3em;
+        padding: 0.3em 0.5em;
+        gap: 0.5em;
     }
-    .nav-links{
-        grid-template-columns: auto auto;
-    }
-    .nav-links a{
+    .search-btn {
         display: none;
     }
-    .toggle-btn{
-        display: block;
-        width: 18px;
+    #nav-links{
+        display: none;
     }
-    input[type="checkbox"]:checked ~ #sidebarMenu {
-        transform: translateX(0);
-    }
-
     input[type=checkbox] {
         transition: all 0.3s;
         box-sizing: border-box;
@@ -190,7 +256,7 @@ header{
         position: absolute;
         height: 1.5px;
         width: 100%;
-        background-color: #D38216;
+        background-color: #000;
     }
     .horizontal {
         transition: all 0.3s;
@@ -229,24 +295,110 @@ header{
         transform: rotate(-135deg);
         margin-top: -4.5px;
     }
+    
+    input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: translateX(0);
+    }
     #sidebarMenu {
-        display: flex;
-        align-items: center;
-        gap: 2.5em;
-        padding-top: 1.5em;
-        flex-direction: column;
-        background-color: #D38216;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background: #fff;
         width: 100%;
-        height: 15em;
+        height: 100%;
+        margin-top: 39px;
+        transform: translateX(-100%);
+        transition: transform 250ms ease-in-out;
     }
-    #sidebarMenu a{
+    .sidebarMenuInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding-top: 1em;
+        height: 100%;
+        width: 100%;
+    }
+    .sidebarMenuInner a{
         text-decoration: none;
-        color: #fff;
-        transition: 250ms ease-in;
         font-size: clamp(0.6em,1vw,1em);
+        text-align: center;
+        color: #000;
+        width: fit-content;
+        height: fit-content;
+        transition: 250ms ease-in;
+        font-weight: 600;
     }
-    #sidebarMenu a:hover{
-        transform: scale(1.2);
+    .sidebarMenuInner a:hover{
+        transform: scale(1.1);
+        color: #E61B20;
     }
-
+    #lady-bg-img{
+        height: 200px;
+    }
+    .contact-header,
+    .about-us-header{
+        height: 2.5em;
+        font-size: clamp(1.5em,1vw,1em);
+    }
+    .contact-details-div img{
+        width: 150px;
+        height: 100px;
+    }
+    .contact-details,
+    .about-ceo{
+        font-size: clamp(0.7em,1vw,1em);
+    }
+    .ceo-details-div{
+        padding: 1em;
+    }
+    .ceo-details img{
+        width: 80px;
+        height: 80px;
+    }
+    .ceo-details-div p{
+        padding-top: 1em;
+    }
+    footer{
+        height: 35em;
+        grid-template-rows: auto 75% auto;
+        gap: 1em;
+    }
+    .footer-div2{
+        grid-template-columns: auto;
+        gap: 1em;
+    }
+}
+@media (max-width: 375px){
+    .contact-header,
+    .about-us-header{
+        height: 2.5em;
+        font-size: clamp(1.2em,1vw,1em);
+    }
+    .contact-details-div img{
+        width: 130px;
+        height: 100px;
+    }
+    .contact-details{
+        font-size: clamp(0.4em,1vw,1em);
+    }
+    .about-ceo{
+        font-size: clamp(0.5em,1vw,1em);
+    }
+    .ceo-details-div{
+        gap: 1em;
+        padding: 1.5em 0.5em;
+    }
+    .ceo-details-div p{
+        font-size: clamp(0.5em,1vw,1em);
+        padding-top: 0.3em;
+    }   
+    .ceo-details h4{
+        font-size: clamp(0.7em,1vw,1em);
+    }
+    .ceo-details h6{
+        font-size: clamp(0.5em,1vw,1em);
+    }
 }
