@@ -47,6 +47,7 @@ header{
 .header-details img,
 .footer-div1 img{
     height: 30px;
+    width: 30px;
 }
 .nav-links-div{
     display: flex;
@@ -89,6 +90,27 @@ header{
     transform: scale(1.1);
     transition: all 250ms;
 }
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: #000;
+    height: 15px;
+    width: fit-content;
+    padding: 1em;
+    font-size: clamp(0.5em,1vw,1em);
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0.5px solid #E61B20;
+}
+#login:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+    background-color: #E61B20;
+    color: #fff;
+}
 .sidebarIconToggle,
 .openSidebarMenu,
 #sidebarMenu{
@@ -97,24 +119,25 @@ header{
 .about-us-div{
     display: flex;
     flex-direction: column;
-    padding-top: 2.5em;
 }
 .about-us-header{
-    background-image: url(../images/banner-img.jpg);
+    background-image: url(../images/vecteezy_abstract-red-fluid-wave-background_.jpg);
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 4em 0 2em 0;
+}
+.about-us-header p{
     color: #fff;
-    height: 3.5em;
-    background-size:cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(1.8em,1vw,1em);
+    width: 100%;
+    font-size: clamp(2em,1vw,1em);
     font-family: Arial, Helvetica, sans-serif;
 }
 .about-ceo{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 2em;
+}
+.about-ceo p{
     font-size: clamp(0.7em,1vw,1em);
 }
 .ceo-details-div{
@@ -224,11 +247,25 @@ footer{
         padding: 0.3em 0.5em;
         gap: 0.5em;
     }
+    .header-details img{
+        width: 60px;
+        height: 60px;
+    }
     .search-btn {
         display: none;
     }
     #nav-links{
         display: none;
+    }
+    .nav-links-div{
+        gap: 1em;
+    }
+    #home{
+        font-size: clamp(1em,1vw,1em);
+        padding: 0.7em 0.3em;
+    }
+    #login{
+        font-size: clamp(0.9em,1vw,1em);
     }
     input[type=checkbox] {
         transition: all 0.3s;
@@ -242,13 +279,13 @@ footer{
         height: 100%;
         display: block;
         width: 100%;
-        width: 12px;
+        width: 25px;
     }
     .spinner {
         transition: all 0.3s;
         box-sizing: border-box;
         position: absolute;
-        height: 1.5px;
+        height: 4px;
         width: 100%;
         background-color: #000;
     }
@@ -257,7 +294,7 @@ footer{
         box-sizing: border-box;
         position: relative;
         float: left;
-        margin-top: 1.5px;
+        margin-top: 3px;
     }
     .diagonal.part-1 {
         position: relative;
@@ -270,7 +307,7 @@ footer{
         box-sizing: border-box;
         position: relative;
         float: left;
-        margin-top: 1.5px;
+        margin-top: 3px;
     }
     input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
         transition: all 0.3s;
@@ -281,13 +318,13 @@ footer{
         transition: all 0.3s;
         box-sizing: border-box;
         transform: rotate(135deg);
-        margin-top: 3.5px;
+        margin-top: 9.5px;
     }
     input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         transition: all 0.3s;
         box-sizing: border-box;
         transform: rotate(-135deg);
-        margin-top: -4.5px;
+        margin-top: -10.5px;
     }
     
     input[type="checkbox"]:checked ~ #sidebarMenu {
@@ -302,7 +339,7 @@ footer{
         background: #fff;
         width: 100%;
         height: 100%;
-        margin-top: 39px;
+        margin-top: 69px;
         transform: translateX(-100%);
         transition: transform 250ms ease-in-out;
     }
@@ -330,39 +367,60 @@ footer{
         color: #E61B20;
     }
     .about-us-header{
-        height: 2.5em;
-        font-size: clamp(1.5em,1vw,1em);
+        padding: 6em 0 2em 0;
     }
-    .about-ceo{
-        font-size: clamp(0.7em,1vw,1em);
+    .about-us-header p{
+        font-size: clamp(1.4em,1vw,1em);
+    }
+    .about-ceo p{
+        font-size: clamp(1.2em,1vw,1em);
     }
     .ceo-details-div{
         padding: 1em;
     }
     .ceo-details img{
-        width: 80px;
-        height: 80px;
+        width: 140px;
+        height: 140px;
     }
     .ceo-details-div p{
-        padding-top: 1em;
+        padding-top: 0;
+        font-size: clamp(0.9em,1vw,1em);
+    }
+    .ceo-details h4{
+        font-size: clamp(1.2em,1vw,1em);
+    }
+    .ceo-details h6{
+        font-size: clamp(1em,1vw,1em);
     }
     footer{
-        height: 30em;
+        height: 45em;
         gap: 0;
+    }
+    .footer-div1 img{
+        width: 60px;
+        height: 60px;
+    }
+    .socials a{
+        font-size: clamp(1em,1vw,1em);
     }
     .footer-div2{
         grid-template-columns: auto;
         gap: 1em;
     }
+    .footer-details h4{
+        font-size: clamp(1em,1vw,1em);
+    }
+    .footer-details a{
+        font-size: clamp(0.8em,1vw,1em);
+    }
     .sub-footer{
-        font-size: clamp(0.4em,1vw,1em);
+        font-size: clamp(0.7em,1vw,1em);
 
     }
 }
 @media (max-width: 375px){
     .about-us-header{
-        height: 2.5em;
-        font-size: clamp(1.2em,1vw,1em);
+        padding: 6em 0 2em 0;
     }
     .about-ceo{
         font-size: clamp(0.5em,1vw,1em);
@@ -376,9 +434,9 @@ footer{
         padding-top: 0.3em;
     }   
     .ceo-details h4{
-        font-size: clamp(0.7em,1vw,1em);
+        font-size: clamp(1.2em,1vw,1em);
     }
     .ceo-details h6{
-        font-size: clamp(0.5em,1vw,1em);
+        font-size: clamp(1em,1vw,1em);
     }
 }
