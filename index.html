@@ -1,92 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
-    <link rel="shortcut icon" href="images/ucb-logo.jpg" type="image/x-icon">
-    <title>Union Commercials Bank</title>
-</head>
-<body>
-    <header>
-        <div class="header-details">
-            <img src="images/ucb-logo.jpg" alt="Union Commercials Bank Logo">
-            <div class="nav-links-div">
-                <a href="html/about-us.html" id="nav-links">About Us</a>
-                <a href="html/contact-us.html" id="nav-links">Contact Us</a>
-                <a href="" id="nav-links">Products & Services</a>
-                <a href="#" id="nav-links">News & Events</a>
-                <a href="html/login.html" id="login"><i class="fa-regular fa-user"></i>Login</a>
-                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                <label for="openSidebarMenu" class="sidebarIconToggle">
-                    <div class="spinner diagonal part-1"></div>
-                    <div class="spinner horizontal"></div>
-                    <div class="spinner diagonal part-2"></div>
-                </label>
-                <div id="sidebarMenu">
-                    <div class="sidebarMenuInner">
-                        <a href="html/about-us.html">About Us</a>
-                        <a href="html/contact-us.html">Contact Us</a>
-                        <a href="">Products & Services</a>
-                        <a href="#">News & Events</a>
-                    </div>
+  <!-- Mirrored from sonyaleemitchell.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Apr 2024 15:05:55 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Lana Rae St John - Stock Broker, Investment Advisor"
+    />
+    <meta name="author" content="Lana Rae St John" />
+    <title>Lana Rae St John - Stock Broker</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/jquery.pagepiling.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="css/LineIcons.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/favicons.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicons.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicons.png"
+    />
+    <link rel="manifest" href="img/favicons/site.html" />
+    <link
+      rel="mask-icon"
+      href="img/favicons/safari-pinned-tab.svg"
+      color="#222222"
+    />
+    <link rel="shortcut icon" href="img/favicons/favicons.png" />
+    <meta name="msapplication-TileColor" content="#222222" />
+    <meta
+      name="msapplication-config"
+      content="img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .mock-image {
+        width: 105%;
+        border-radius: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .mock-image {
+          margin-top: 20px;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body class="body-copyright-light">
+    <div class="preloader">
+      <div class="three-bounce">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header id="header" class="header header-fixed">
+        <div class="header-bg"></div>
+        <div class="container-fluid clearfix">
+          <div class="brand">
+            <img src="img/favicons/favicons.png" alt="" id="lana-logo">
+          </div>
+          <button class="nav-toggle-btn a-nav-toggle">
+            <span class="nav-toggle">
+              <span class="stick stick-1"></span>
+              <span class="stick stick-2"></span>
+            </span>
+          </button>
+          <div class="header-content d-none d-md-block">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="header-tagline">
+                  Financial Consultant<br />
+                  Stock Broker
                 </div>
+              </div>
+              <div class="col-md-9">
+                <div class="header-contacts">
+                  <div class="header-contact-item">
+                    <a
+                      href="mailto:contact@sonyaleemitchell.com"
+                      class="mail-link"
+                      ><span
+                        class="__cf_email__"
+                        style="text-transform: lowercase"
+                        >contact@sonyaleemitchell.com</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>     
-    </header>
-    <div id="landing-img"></div>
-    <section class="login-div">
-        <img src="images/happy-face2.webp" alt="Happy man face">
-        <div class="login">
-            <p>Corporate Banking</p>
-            <a href="html/login.html">Login Here</a>
+          </div>
         </div>
-    </section>
-    <footer>
-        <div class="footer-div1">
-            <img src="images/ucb-logo.jpg" alt="Union Commercials Bank Logo">
-            <div class="socials">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <div class="hide-menu a-nav-toggle"></div>
+        <div class="menu">
+          <div class="menu-lang">
+            <a href="#" class="menu-lang-item active">Eng</a>
+          </div>
+          <nav class="menu-main" id="accordion">
+            <ul id="menuMain">
+              <li data-menuanchor="Intro" class="active">
+                <a href="#Intro">Intro</a>
+              </li>
+              <li data-menuanchor="Services">
+                <a href="#Services">Services</a>
+              </li>
+              <!--<li data-menuanchor="Projects"><a href="#Services">Examinations</a></li>-->
+              <!--<li data-menuanchor="Awards"><a href="#Awards">Registraions</a></li>-->
+              <li data-menuanchor="Experience">
+                <a href="#Awards">Work Experience</a>
+              </li>
+              <!--<li data-menuanchor="Clients"><a href="#Clients">Clients</a></li>-->
+              <li data-menuanchor="Testimonials">
+                <a href="#Clients">Client Reviews</a>
+              </li>
+              <li data-menuanchor="Contact">
+                <a href="#Testimonials">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-footer">
+            <ul class="social social-rounded">
+              <!--<li><a href="#"><i class="lni lni-youtube-filled"></i></a></li>-->
+              <!--<li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>-->
+            </ul>
+            <div class="menu-copyright">
+              &copy; Lana Rae St John 2024<br />
+              All Rights Reserved
             </div>
+          </div>
         </div>
-        <div class="footer-div2">
-            <div class="footer-details">
-                <h4>Know UCB</h4>
-                <a href="">Profile</a>
-                <a href="">Corporate Information</a>
-                <a href="html/about-us.html">About Us</a>
-                <a href="">Right Of Info</a>
+      </header>
+      <div id="content" class="content">
+        <div class="homepage-personal a-pagepiling">
+          <div
+            class="section pp-scrollable slide-dark slide-dark-footer slide-personal-intro"
+          >
+            <div class="slide-container">
+              <div class="slide-bg">
+                <div
+                  class="slide-photo circle-golden slide-intro-circle1 transformLeft"
+                ></div>
+                <div
+                  class="slide-photo circle-brown slide-intro-circle2 transformRight"
+                ></div>
+                <div class="slide-photo slide-intro-man"></div>
+              </div>
+              <div class="container">
+                <div class="slide-num">1</div>
+                <div class="row">
+                  <div class="col-sm-6 col-10">
+                    <h1 class="slide-title animate-element delay5 fadeInDown">
+                      Lana <br />Rae St John
+                    </h1>
+                    <div class="animate-element delay5 fadeInUp">
+                      <h3 class="slide-title-sub">
+                        Financial Consultant &amp; Stock Broker
+                      </h3>
+                      <div class="slide-descr slide-descr-intro">
+                        I’m Lana Rae St John, a Stock Broker &amp; Financial
+                        Advisor based in the US. I build immersive & functional
+                        investment strategies for respective clients all over
+                        the world.
+                      </div>
+                      <div class="slide-btn">
+                        <a
+                          data-menuanchor="Services"
+                          href="#Services"
+                          class="btn btn-success"
+                          style="margin-top: 10px"
+                          >get started</a
+                        >
+                        <!--<a href="https://brokercheck.finra.org/individual/summary/2981768" target="_blank" class="btn btn-info" style="margin-top: 10px;">See Brokercheck</a>-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <img src="img/pic2.jpeg" class="mock-image" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer-details">
-                <h4>Products & Services</h4>
-                <a href="">Corporate Banking</a>
-                <a href="">Agent Banking</a>
-                <a href="">Retail Banking</a>
-                <a href="">SME Banking</a>
-            </div>
-            <div class="footer-details">
-                <h4>News & Events</h4>
-                <a href="">Photo Gallery</a>
-                <a href="">Press</a>
-                <a href="">Newsletter</a>
-            </div>
-            <div class="footer-details">
-                <h4>Help & Support</h4>
-                <a href="html/contact-us.html">Contact Us</a>
-                <a href="">Help</a>
-                <a href="">Find a branch or ATM</a>
-            </div>
-        </div>
-        <div class="sub-footer">Copyright © 2023 - Union Commercials Bank.  All rights reserved.</div>
-    </footer>
-    
-    
+          </div>
+          <div class="section pp-scrollable slide-personal-services">
+            <div class="slide-container" id="services">
+              <div class="slide-bg">
+                <div
+                  class="slide-photo circle-light slide-services-circle2 transformLeft"
+                ></div>
+                <div
+                  class="slide-photo circle-brown slide-services-circle1 transformRight"
+                ></div>
+              </div>
+              <div class="container">
+                <div class="slide-num">2</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="animate-element delay5 fadeInDown">
+                      <img
+                        src="img/pic3.jpeg"
+                        style="width: 70%; border-radius: 15px"
+                      />
+                      <h2
+                        class="slide-title slide-title-personal-services slide-title-lg"
+                      >
+                        9
+                      </h2>
+                      <div class="d-md-none">
+                        <div class="slide-title-sub slide-title-sub-sm">
+                          YEARS of EXPERIENCE
+                        </div>
 
+                        <div
+                          class="slide-descr slide-descr-personal-services font-italic"
+                        >
+                          <a
+                            data-menuanchor="Contact"
+                            href="#Contact"
+                            class="text-primary text-underline"
+                            >Contact me</a
+                          >.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h3
+                      class="slide-title-info animate-element delay5 fadeInDown"
+                    >
+                      I have 9 years of experience having worked in a
+                      brokerage firm.
+                      <span class="text-primary"
+                        >I have three principal/supervisory exams, two general industry/product exams, and two state securities law exams.</span
+                      >
+                    </h3>
 
-</body>
+                    <div class="col-md-12">
+                      <div class="service-item">
+                        <div class="service-item-title slide-title-sub">
+                          Principal/Supervisory Exam
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="service-item-descr slide-descr">
+                              General Securities Sales Supervisor - Options Module Examination (S9) 
+                            </div>
+                            <div class="service-item-more">
+                              <a
+                                href="#"
+                                class="btn btn-sm btn-circle btn-success"
+                                >Jan 02, 2023</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item-descr slide-descr">
+                              General Securities Sales Supervisor Examinations (Options Module & General Module) (S8) 
+                            </div>
+                            <div class="service-item-more">
+                              <a
+                                href="#"
+                                class="btn btn-sm btn-circle btn-success"
+                                >Feb 17, 1994</a
+                              >
+                            </div>
+                          </div>
+
+                          <!--<div class="service-item-title slide-title-sub" style="margin-top: 10px;"></div>-->
+
+                          <div class="col-md-6">
+                            <div class="service-item-descr slide-descr">
+                              General Securities Sales Supervisor - Options Module Examination (S10)
+                            </div>
+                            <div class="service-item-more">
+                              <a
+                                href="#"
+                                class="btn btn-sm btn-circle btn-success"
+                                >Jan 02, 2023</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row animate-element delay5 fadeInUp">
+                  <div class="col-md-4 d-none d-md-block">
+                    <div class="slide-title-sub slide-title-sub-sm">
+                      YEARS
+                      <div class="d-none d-md-block"></div>
+                      EXPERIENCE
+                    </div>
+                    <div
+                      class="slide-descr slide-descr-personal-services font-italic"
+                    >
+                      <a
+                        data-menuanchor="Contact"
+                        href="#Contact"
+                        class="text-primary text-underline"
+                        >Contact me</a
+                      >.
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="service-list row">
+                      <div class="col-md-6">
+                        <div class="service-item">
+                          <div class="service-item-title slide-title-sub">
+                            General Industry/Products Exam
+                          </div>
+                          <div class="service-item-descr slide-descr">
+                            SIE - Securities Industry Essentials Examination
+                          </div>
+                          <div class="service-item-more">
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-circle btn-success"
+                              >Oct 1, 2018</a
+                            >
+                          </div>
+                          <div
+                            class="service-item-title slide-title-sub"
+                            style="margin-top: 10px"
+                          ></div>
+                          <div class="service-item-descr slide-descr">
+                            Series 7 - General Securities Representative
+                            Examination
+                          </div>
+                          <div class="service-item-more">
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-circle btn-success"
+                              >May 19, 1990</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="service-item">
+                          <div class="service-item-title slide-title-sub">
+                            State Securities Law Exam
+                          </div>
+                          <div class="service-item-descr slide-descr">
+                            Uniform Combined State Law
+                            Examination (S66)
+                          </div>
+                          <div class="service-item-more">
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-circle btn-success"
+                              >Jan 22, 2003</a
+                            >
+                          </div>
+                          <div
+                            class="service-item-title slide-title-sub"
+                            style="margin-top: 10px"
+                          ></div>
+                          <div class="service-item-descr slide-descr">
+                            Uniform Securities Agent State Law
+                            Examination (S63)
+                          </div>
+                          <div class="service-item-more">
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-circle btn-success"
+                              >May 23, 1990</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section pp-scrollable slide-dark-footer slide-personal-awards"
+          >
+            <div class="slide-container">
+              <div class="slide-bg">
+                <div
+                  class="slide-photo circle-green slide-awards-circle1 transformLeft"
+                ></div>
+                <div
+                  class="slide-photo circle-brown slide-awards-circle2 transformRight"
+                ></div>
+              </div>
+              <div class="container">
+                <div class="slide-num">4</div>
+                <div
+                  class="row align-items-center animate-element delay5 fadeInDown"
+                >
+                  <div class="col-md-7">
+                    <h2 class="slide-title mb-5 mb-md-0">
+                      Registr<br />ations
+                    </h2>
+                  </div>
+
+                  <div class="col-md-5">
+                    <h3 class="slide-title-info mb-5 mb-md-0">
+                      Some of the NUMEROUS Self Regulatory Organizations(SRO)
+                      <span class="text-primary">I registered with.</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="row award-list animate-element delay5 fadeInUp">
+                  <div class="col-lg-3">
+                    <div class="award-item">
+                      <div class="award-item-date">100%</div>
+                      <div class="award-item-logo">
+                        <img src="img/1.png" alt="" />
+                      </div>
+                      <div class="award-item-title slide-title-sub">FINRA</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="award-item">
+                      <div class="award-item-date">100%</div>
+                      <div class="award-item-logo">
+                        <img src="img/charles-schwab.png" alt="" />
+                      </div>
+                      <div class="award-item-title slide-title-sub">
+                        CHARLES SCHWAB & CO., INC.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="award-item">
+                      <div class="award-item-date">100%</div>
+                      <div class="award-item-logo">
+                        <img src="img/Dillion.jfif" alt="" />
+                      </div>
+                      <div class="award-item-title slide-title-sub">
+                        DILLION SECURITIES, INC.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="award-item">
+                      <div class="award-item-date">100%</div>
+                      <div class="award-item-logo">
+                        <img src="img/Korber_Logo.jpg" alt="" />
+                      </div>
+                      <div class="award-item-title slide-title-sub">
+                        KOBER FINANCIAL CORP.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section pp-scrollable slide-dark slide-personal-experience"
+          >
+            <div class="slide-container">
+              <div class="slide-bg">
+                <div class="slide-photo slide-experience-image1"></div>
+                <div class="slide-photo slide-experience-image2"></div>
+                <div class="slide-photo slide-experience-image3"></div>
+              </div>
+              <div class="container">
+                <div class="slide-num">5</div>
+                <div
+                  class="row align-items-center mb-4 animate-element delay5 fadeInDown"
+                >
+                  <div class="col-8">
+                    <h2 class="slide-title mb-0">Work experience</h2>
+                  </div>
+                  <div class="col-4 text-right">
+                    <div class="a-carousel-nav carousel-nav"></div>
+                  </div>
+                </div>
+                <div class="animate-element delay5 fadeInUp">
+                  <div
+                    class="carousel-experience a-carousel-experience owl-carousel owl-theme"
+                  >
+                    <div class="experience-list">
+                      <div class="experience-item">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="experience-item-date">
+                              2015 - Present (9 years)
+                            </div>
+                            <div
+                              class="experience-item-company slide-title-sub company-blue"
+                            ></div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="experience-item-title slide-title-sub">
+                              CHARLES SCHWAB & CO., INC. (CRD# 5393)
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="experience-item-descr slide-descr">
+                              Stock Broker | Investment Advisor
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-btn">
+                    <a
+                      href="https://reports.adviserinfo.sec.gov/reports/individual/individual_2059530.pdf"
+                      target="blank"
+                      class="btn btn-success"
+                      ><i class="lni lni-download mr-3"></i>Detailed Report</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section pp-scrollable slide-personal-clients">
+            <div class="slide-container">
+              <div class="slide-bg"></div>
+              <div class="container">
+                <div class="slide-num">6</div>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <h3
+                      class="slide-title-info mr-lg-5 pr-lg-3 animate-element delay5 fadeInDown"
+                    >
+                      I've been fortunate to work with and for people from some
+                      <span class="text-primary">amazing organizations.</span>
+                    </h3>
+                    <div class="client-list animate-element delay5 fadeInUp">
+                      <div class="clients-title title-mini">achievements</div>
+                      <div class="client-item media">
+                        <div class="client-icon">
+                          <i class="icon-partners"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="client-item-title">Over 2,000</div>
+                          <div class="client-item-descr slide-descr">
+                            Partners worldwide, as well as Clients, brokers and
+                            advisors.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-item media">
+                        <div class="client-icon">
+                          <i class="icon-project"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="client-item-title">Over 500</div>
+                          <div class="client-item-descr slide-descr">
+                            Impressive portfolios handled for clients worldwide
+                            with more 40 countries.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-1 d-none d-xl-block"></div>
+                  <div class="col-xl-6 col-lg-7">
+                    <div
+                      class="clients-photo animate-element delay5 fadeZooming"
+                    >
+                      <div class="clients-photo-item clients-photo-item1">
+                        <div class="inside">
+                          <img src="img/charles-schwab.png" alt="" />
+                        </div>
+                      </div>
+                    
+                      <div class="clients-photo-item clients-photo-item7">
+                        <div class="inside">
+                          <img src="img/pic1.jpeg" alt="" />
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section pp-scrollable slide-dark slide-personal-testimonials"
+          >
+            <div class="slide-container">
+              <div class="slide-bg">
+                <div
+                  class="slide-photo circle-golden slide-testimonials-circle3 animate-element delay5 fadeInUp"
+                ></div>
+              </div>
+              <div class="container">
+                <div class="slide-num">7</div>
+                <div class="row">
+                  <div class="col-md-5 col-sm-10 mb-4">
+                    <div class="video-link">
+                      <a
+                        data-fancybox
+                        class="inside animate-element delay6 fadeIn"
+                        style="background-image: url(img/pic3.jpeg)"
+                        ><div class="center-icon"></div
+                      ></a>
+                      <div
+                        class="slide-photo circle-green slide-testimonials-circle1 transformLeft"
+                      ></div>
+                      <div
+                        class="slide-photo circle-brown slide-testimonials-circle2 transformRight"
+                      ></div>
+                    </div>
+                    <div class="video-link-descr slide-descr">TESTIMONIALS</div>
+                  </div>
+                  <div class="col-md-1 col-xl-2 d-none d-lg-block"></div>
+                  <div class="col-xl-5 col-lg-6 col-md-7">
+                    <div
+                      class="carousel-testimonial a-carousel-testimonial owl-carousel owl-theme animate-element delay5 fadeInDown"
+                    >
+                      <div class="testimonials-item">
+                        <div class="testimonials-item-avatar-container">
+                          <div class="testimonial-item-avatar avatar">
+                            <div
+                              class="inside"
+                              style="background-image: url(img/pic4.jpg)"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="testimonials-item-text slide-title-info">
+                          “Lana Rae is an exceptionally talented & well grounded
+                          financial adviser. She brought her infectious
+                          enthusiasm & creativity to my portfolio and the
+                          changes were tremendous.”
+                        </div>
+                        <div class="testimonials-item-rating">
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                        </div>
+                        <div class="testimonials-item-author">Robert Prace</div>
+                      </div>
+                      <div class="testimonials-item">
+                        <div class="testimonials-item-avatar-container">
+                          <div class="testimonial-item-avatar avatar">
+                            <div
+                              class="inside"
+                              style="background-image: url(img/woman1.jpg)"
+                            ></div>
+                          </div>
+                          >
+                        </div>
+                        <div class="testimonials-item-text slide-title-info">
+                          “Lana handled my portfolio and turned my profit
+                          accumulation strategy around with her enormous
+                          expertise. I recommend her to every beginner out
+                          there”
+                        </div>
+                        <div class="testimonials-item-rating">
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                        </div>
+                        <div class="testimonials-item-author">
+                          Michelle Grace
+                        </div>
+                      </div>
+                      <div class="testimonials-item">
+                        <div class="testimonials-item-avatar-container">
+                          <div class="testimonial-item-avatar avatar">
+                            <div
+                              class="inside"
+                              style="background-image: url(img/woman2.jpg)"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="testimonials-item-text slide-title-info">
+                          “I met Lana through a colleague of mine in California,
+                          She had accumulated quite a fortune on his portfolio
+                          and I got in contact with her. Six months down the
+                          line and I can say that was one of the best decisions
+                          of my life.”
+                        </div>
+                        <div class="testimonials-item-rating">
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                          <i class="lni lni-star-filled"></i>
+                        </div>
+                        <div class="testimonials-item-author">Hayley Dean</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section pp-scrollable slide-personal-contacts">
+            <div class="slide-container">
+              <div class="slide-bg">
+                <div
+                  class="slide-photo circle-light slide-contacts-circle1 transformLeft"
+                ></div>
+                <div
+                  class="slide-photo circle-brown slide-contacts-circle2 transformRight"
+                ></div>
+              </div>
+              <div class="container">
+                <div class="slide-num">8</div>
+                <div class="row">
+                  <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="contact-personal-card">
+                      <div
+                        class="contact-personal-card-title animate-element delay7 fadeInDown"
+                      >
+                        <h2 class="slide-title">contact</h2>
+                      </div>
+                      <img
+                        src="img/pic2.jpeg"
+                        style="width: 90%; border-radius: 15px"
+                      />
+                      <div
+                        class="contact-personal-card-detail animate-element delay7 fadeInUp"
+                      >
+                        <div class="row">
+                          <div class="col-xl-7 col-lg-10">
+                            <div class="title-mini">contact info</div>
+
+                            <div class="text-md text-uppercase">
+                              <a
+                                href="mailto:contact@sonyaleemitchell.com"
+                                class="text-primary"
+                                ><strong
+                                  ><span
+                                    class="__cf_email__"
+                                    style="text-transform: lowercase"
+                                    >contact@sonyaleemitchell.com</span
+                                  ></strong
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 animate-element delay7 fadeInUp">
+                    <div class="slide-title-info">
+                      Let's have a conversation.
+                      <span class="text-primary"
+                        >Enter your preferred time & date for an introductory
+                        call.</span
+                      >
+                    </div>
+                    <form class="contact-personal-form a-ajax-form">
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Subject of Inquiry</label>
+                        <select class="form-control" name="subject" required>
+                          <option value="Portfolio Guidance">
+                            Portfolio Guidance
+                          </option>
+                          <option value="Investment Analysis">
+                            Investment Analysis
+                          </option>
+                          <option value="Mortgage Advice">
+                            Mortgage Advice
+                          </option>
+                          <option value="General Financial Review">
+                            General Financial Review
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Full name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Email Address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Mobile Number</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="mobile"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Schedule Time</label>
+                        <input
+                          type="time"
+                          class="form-control"
+                          name="time"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Schedule Date</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          name="date"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Preferred Time Zone</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="timeZone"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Location</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="location"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group form-group-material a-form-group">
+                        <label class="label">Message</label>
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          cols="30"
+                          rows="3"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <div class="message text-success success-message">
+                        Your message was successfully sent...
+                      </div>
+                      <div class="message text-danger error-message">
+                        Sorry something went wrong
+                      </div>
+                      <div class="control-btn">
+                        <button class="btn btn-success" type="submit">
+                          Send message
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="footer">
+        <ul class="social social-fixed">
+          <!--<li><a href="#"><i class="lni lni-youtube-filled"></i></a></li>-->
+          <!--<li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>-->
+        </ul>
+        <div class="copyright copyright-fixed d-none d-md-block">
+          &copy; Lana Rae St John 2024<br />
+          All Rights Reserved
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal fade" id="send-request">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Send request</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="lni lni-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="slide-descr">
+              Leave your contacts and our managers will contact you soon.
+            </p>
+            <form class="form-request a-ajax-form">
+              <div class="form-group form-group-material a-form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group form-group-material a-form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  required=""
+                  placeholder="Email *"
+                />
+              </div>
+              <div class="form-group form-group-material a-form-group">
+                <textarea
+                  rows="3"
+                  name="message"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="message text-success success-message">
+                Your message is successfully sent...
+              </div>
+              <div class="message text-danger error-message">
+                Sorry something went wrong
+              </div>
+              <div class="control-btn text-right">
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/scripted.js"></script>
+  </body>
+
+  <!-- Mirrored from sonyaleemitchell.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Apr 2024 15:06:21 GMT -->
 </html>
