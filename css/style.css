@@ -109,7 +109,7 @@ input:focus {
 .btn-success:hover,
 .btn-success.focus,
 .btn-success:focus {
-  box-shadow: rgba(92, 165, 149, 0.2) 0 0 0 6px;
+  box-shadow: rgb(255, 238, 144) 0 0 0 6px;
 }
 .btn-sm {
   padding-top: 0.5rem;
