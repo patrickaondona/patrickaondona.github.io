@@ -484,10 +484,6 @@ body {
     font-size: 1.5vw;
   }
 
-  body {
-    background-color: pink;
-  }
-
   .about-section-text {
     font-size: 1.5vw;
   }
@@ -523,10 +519,6 @@ body {
 
   .nav-link {
     font-size: 1.8vw;
-  }
-
-  body {
-    background-color: yellow;
   }
 
   #hello {
@@ -586,12 +578,12 @@ body {
   .contact {
     padding: 5vh 5vw;
   }
-  
+
   .contact-name i,
   .contact-name p {
     font-size: 2vw;
   }
-  
+
   .contact a {
     font-size: 1.8vw;
   }
@@ -599,9 +591,7 @@ body {
   #courtesy-text {
     font-size: 2.5vw;
   }
-
 }
-  
 
 /* 768PX  */
 
@@ -612,10 +602,6 @@ body {
 
   .nav-link {
     font-size: 1.9vw;
-  }
-
-  body {
-    background-color: green;
   }
 
   #hello {
@@ -731,34 +717,27 @@ body {
   .contact {
     padding: 5vh 5vw;
   }
-  
+
   .contact-name i,
   .contact-name p {
     font-size: 2.5vw;
   }
-  
+
   .contact a {
     font-size: 2vw;
   }
-
-
-  
 }
 
 /* 600PX */
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
-
   .nav-bar {
     padding: 0 3vw;
     border-radius: 0;
   }
 
   #name {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
 
   .nav-links {
@@ -837,13 +816,13 @@ body {
   }
 
   .contact-info p {
-    font-size: 4.5vw;
+    font-size: 6vw;
   }
 
   .contact-tel {
     text-decoration: none;
     color: #a177b4;
-    font-size: 3.5vw;
+    font-size: 5vw;
     font-weight: 600;
   }
 
@@ -855,7 +834,7 @@ body {
   .smallscreen-social-links a {
     text-decoration: none;
     color: #a177b4;
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .smallscreen-social-links a:hover {
@@ -864,7 +843,7 @@ body {
   }
 
   #hello {
-    font-size: 3.3vw;
+    font-size: 4vw;
   }
 
   .intro-section1 h1 {
@@ -872,19 +851,51 @@ body {
   }
 
   .intro-section1 p {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   .social-links a {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .resume-btn {
-    font-size: 3.3vw;
+    font-size: 4.5vw;
+  }
+
+  #my-pic {
+    width: 70%;
+  }
+
+  .about-section-details h2 {
+    font-size: 5vw;
+  }
+
+  .about-section-name {
+    font-size: 6.5vw;
+  }
+
+  .about-section-text {
+    font-size: 4.5vw;
   }
 
   .project-section h1 {
+    font-size: 7vw;
+  }
+
+  .project-details h2 {
     font-size: 5vw;
+  }
+
+  .project-details p {
+    font-size: 4vw;
+  }
+
+  .project-skills-used img {
+    width: 10%;
+  }
+
+  .project-links a {
+    font-size: 4vw;
   }
 
   .education-section {
@@ -894,7 +905,7 @@ body {
   }
 
   .education-section h1 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .education-wrapper {
@@ -904,7 +915,7 @@ body {
 
   #bar {
     height: 10vh;
-    width: 1vw;
+    width: 1.5vw;
   }
 
   .education {
@@ -912,15 +923,15 @@ body {
   }
 
   .education i {
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
   .education h2 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .education p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   #laptop-wrapper {
@@ -949,7 +960,7 @@ body {
   }
 
   .skills-container-div h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .skills-wrapper {
@@ -958,8 +969,22 @@ body {
     row-gap: 5vh;
   }
 
+  .skill {
+    gap: 3vw;
+  }
+
+  .skill-icon {
+    width: 45px;
+    height: 45px;
+    padding: 4.5px;
+  }
+
+  .skill-icon img {
+    width: 35px;
+  }
+
   .skill-details h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .skill-details p {
@@ -972,38 +997,45 @@ body {
   }
 
   .contact-section h1 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .contact-section p {
-    font-size: 3vw;
+    font-size: 4vw;
     max-width: 80%;
   }
 
-  
   .contact-name i,
   .contact-name p {
-    font-size: 4vw;
+    font-size: 5vw;
   }
-  
+
   .contact a {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   #courtesy-text {
-    font-size: 3.5vw;
+    font-size: 4vw;
+    padding: 2rem;
   }
 }
 
 /* 320PX */
 
 @media only screen and (max-width: 320px) {
-
   #phone-img {
     width: 18rem;
   }
 
   .skills-container {
     height: 30rem;
+  }
+
+  .contact a {
+    font-size: 4vw;
+  }
+
+  #courtesy-text {
+    font-size: 4.5vw;
   }
 }
