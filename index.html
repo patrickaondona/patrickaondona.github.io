@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <div class="nav-bar">
+      <nav class="nav-bar">
         <p id="name">Deabaver <span id="name-color">Aondona Patrick</span></p>
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -21,30 +21,24 @@
           <span></span>
         </div>
         <div class="nav-links" id="nav-links">
-          <a href="#about-section" id="nav-link1" class="nav-link">About</a>
-          <a href="#project-section" id="nav-link4" class="nav-link"
-            >Projects</a
-          >
-          <a href="#education-section" id="nav-link3" class="nav-link"
+          <a href="#about-section" id="nav-link" class="nav-link">About</a>
+          <a href="#project-section" id="nav-link" class="nav-link">Projects</a>
+          <a href="#education-section" id="nav-link" class="nav-link"
             >Education</a
           >
-          <a href="#skills-section" id="nav-link2" class="nav-link">Skills</a>
-          <a href="#contact-section" id="nav-link5" class="nav-link">Contact</a>
+          <a href="#skills-section" id="nav-link" class="nav-link">Skills</a>
+          <a href="#contact-section" id="nav-link" class="nav-link">Contact</a>
         </div>
-      </div>
+      </nav>
       <div id="smallscreen-nav-links-div" class="smallscreen-nav-links-div">
         <div class="smallscreen-nav-links">
-          <a href="#about-section" id="nav-link6" class="nav-link">About</a>
-          <a href="#project-section" id="nav-link9" class="nav-link"
-            >Projects</a
-          >
-          <a href="#education-section" id="nav-link8" class="nav-link"
+          <a href="#about-section" id="nav-link" class="nav-link">About</a>
+          <a href="#project-section" id="nav-link" class="nav-link">Projects</a>
+          <a href="#education-section" id="nav-link" class="nav-link"
             >Education</a
           >
-          <a href="#skills-section" id="nav-link7" class="nav-link">Skills</a>
-          <a href="#contact-section" id="nav-link10" class="nav-link"
-            >Contact</a
-          >
+          <a href="#skills-section" id="nav-link" class="nav-link">Skills</a>
+          <a href="#contact-section" id="nav-link" class="nav-link">Contact</a>
         </div>
         <div class="contact-info">
           <p>Contact for more information</p>
@@ -78,7 +72,7 @@
     </header>
     <main>
       <section class="intro-section">
-        <div class="intro-section1">
+        <div class="intro-section-div">
           <a href="#" id="hello">Hello 👋</a>
           <h1>Deabaver <span id="name-color">Aondona Patrick</span></h1>
           <p>
@@ -133,7 +127,7 @@
         </a>
       </section>
 
-      <section id="about-section" class="about-section">
+      <section id="about-section" class="about-section section">
         <img
           id="my-pic"
           src="images/IMG_3974.JPG"
@@ -157,7 +151,7 @@
         </div>
       </section>
 
-      <section id="project-section" class="project-section">
+      <section id="project-section" class="project-section section">
         <h1>Projects</h1>
         <div class="project-container">
           <div class="project-wrapper">
@@ -276,7 +270,7 @@
         </div>
       </section>
 
-      <section class="education-section" id="education-section">
+      <section id="education-section" class="education-section section">
         <h1>Education</h1>
         <div class="education-wrapper">
           <div class="education">
@@ -302,13 +296,65 @@
         </div>
       </section>
 
-      <section id="skills-section" class="skills-section">
+      <section id="skills-section" class="skills-section section">
         <div id="laptop-wrapper">
           <img id="laptop-img" src="images/laptop-img.png" alt="" />
           <div class="skills-container">
             <div class="skills-container-div">
               <h1>My Skills</h1>
               <div class="skills-wrapper">
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img src="images/electron-logo.png" alt="" />
+                  </div>
+                  <div class="skill-details">
+                    <h2>Electron JS</h2>
+                    <p>
+                      Proficient in using electron JS for desktop applications.
+                    </p>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img
+                      src="https://img.icons8.com/officel/80/react.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="skill-details">
+                    <h2>React</h2>
+                    <p>
+                      Proficient in developing SPAs using React, Redux, and Ant
+                      Design.
+                    </p>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img
+                      src="https://img.icons8.com/color/48/javascript--v1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="skill-details">
+                    <h2>Javascript</h2>
+                    <p>
+                      Proficient in ES6 features of Javascript and TypeScript.
+                    </p>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img
+                      src="https://img.icons8.com/color/48/nodejs.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="skill-details">
+                    <h2>Node.js</h2>
+                    <p>Proficient in developing APIs using node.js.</p>
+                  </div>
+                </div>
                 <div class="skill">
                   <div class="skill-icon">
                     <img
@@ -331,47 +377,6 @@
                   <div class="skill-details">
                     <h2>CSS3</h2>
                     <p>Proficient in the features of CSS3.</p>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img
-                      src="https://img.icons8.com/color/48/javascript--v1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="skill-details">
-                    <h2>Javascript</h2>
-                    <p>
-                      Proficient in ES6 features of Javascript and TypeScript.
-                    </p>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img
-                      src="https://img.icons8.com/officel/80/react.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="skill-details">
-                    <h2>React</h2>
-                    <p>
-                      Proficient in developing SPAs using React, Redux, and Ant
-                      Design.
-                    </p>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img
-                      src="https://img.icons8.com/color/48/nodejs.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="skill-details">
-                    <h2>Node.js</h2>
-                    <p>Proficient in developing APIs using node.js.</p>
                   </div>
                 </div>
                 <div class="skill">
@@ -399,17 +404,6 @@
                   <div class="skill-details">
                     <h2>ClickUp</h2>
                     <p>Proficient in working with ClickUp application.</p>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img src="images/electron-logo.png" alt="" />
-                  </div>
-                  <div class="skill-details">
-                    <h2>Electron JS</h2>
-                    <p>
-                      Proficient in using electron JS for desktop applications.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -424,39 +418,12 @@
               <div class="skills-wrapper">
                 <div class="skill">
                   <div class="skill-icon">
-                    <img
-                      src="https://img.icons8.com/color/48/html-5--v1.png"
-                      alt=""
-                    />
+                    <img src="images/electron-logo.png" alt="" />
                   </div>
                   <div class="skill-details">
-                    <h2>HTML5</h2>
-                    <p>Proficient in the features of HTML5.</p>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img
-                      src="https://img.icons8.com/color/48/css3.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="skill-details">
-                    <h2>CSS3</h2>
-                    <p>Proficient in the features of CSS3.</p>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img
-                      src="https://img.icons8.com/color/48/javascript--v1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="skill-details">
-                    <h2>Javascript</h2>
+                    <h2>Electron JS</h2>
                     <p>
-                      Proficient in ES6 features of Javascript and TypeScript.
+                      Proficient in using electron JS for desktop applications.
                     </p>
                   </div>
                 </div>
@@ -478,6 +445,20 @@
                 <div class="skill">
                   <div class="skill-icon">
                     <img
+                      src="https://img.icons8.com/color/48/javascript--v1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="skill-details">
+                    <h2>Javascript</h2>
+                    <p>
+                      Proficient in ES6 features of Javascript and TypeScript.
+                    </p>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img
                       src="https://img.icons8.com/color/48/nodejs.png"
                       alt=""
                     />
@@ -485,6 +466,30 @@
                   <div class="skill-details">
                     <h2>Node.js</h2>
                     <p>Proficient in developing APIs using node.js.</p>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="skill-details">
+                    <h2>HTML5</h2>
+                    <p>Proficient in the features of HTML5.</p>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-icon">
+                    <img
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="skill-details">
+                    <h2>CSS3</h2>
+                    <p>Proficient in the features of CSS3.</p>
                   </div>
                 </div>
                 <div class="skill">
@@ -514,24 +519,13 @@
                     <p>Proficient in working with ClickUp application.</p>
                   </div>
                 </div>
-                <div class="skill">
-                  <div class="skill-icon">
-                    <img src="images/electron-logo.png" alt="" />
-                  </div>
-                  <div class="skill-details">
-                    <h2>Electron JS</h2>
-                    <p>
-                      Proficient in using electron JS for desktop applications.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact-section" class="contact-section">
+      <section id="contact-section" class="contact-section section">
         <h1>Contact</h1>
         <p>
           I'm always open to new job opportunities or collaborating on some
